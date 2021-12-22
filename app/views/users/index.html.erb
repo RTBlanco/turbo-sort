@@ -8,5 +8,10 @@
 </head>
 <body>
   <h1>Turbo Sort!</h1>
+  <ul>
+    <%= @users.each do |user| %>
+      <li><%= user.name %> - <%= user.moode %>
+    <% end %>
+  </ul>
 </body>
 </html>
