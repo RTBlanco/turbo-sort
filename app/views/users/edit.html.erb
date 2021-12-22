@@ -1,0 +1,8 @@
+<%= form_with model: @user do |u| %>
+  <%= u.label :name %>
+  <%= u.text_field :name %>
+  
+  <%= u.label :happy %>
+  <%= u.check_box :happy %>
+  <%= u.submit %>
+<% end %>
