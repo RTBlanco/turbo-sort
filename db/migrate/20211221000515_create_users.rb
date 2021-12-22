@@ -3,6 +3,7 @@ class CreateUsers < ActiveRecord::Migration[6.1]
     create_table :users do |t|
       t.string :name
       t.boolean :happy, default: false
+      t.belongs_to :active
 
       t.timestamps
     end

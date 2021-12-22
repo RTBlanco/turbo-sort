@@ -3,6 +3,6 @@
   <%# <li>= user.name - = user.happy ? 'happy' : 'sad'</li> %>
 <%# end %> 
 
-<div dom_id user >
+<div id=<%=dom_id user %> >
   <li> <%= user.name %> - <%= user.happy ? '😊' : '😔' %>  <%= link_to 'edit', edit_user_path(user) %></li>
 </div>

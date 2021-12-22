@@ -16,3 +16,6 @@ User.create([
   {name: 'bruce', happy: false},
   {name: 'Ana', happy: false}
 ])
+
+active = Active.create()
+active.users.create(name: 'kobe', happy: true)

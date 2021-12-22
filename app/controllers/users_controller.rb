@@ -3,6 +3,15 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  def new
+    @user = User.new
+  end
+
+  def create
+    @user = User.create(user_params)
+    redirect_to new_user_path
+  end 
+
   def happy
     @users = User.all.where(happy: true)
   end
